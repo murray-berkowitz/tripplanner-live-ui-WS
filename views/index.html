@@ -10,6 +10,15 @@
     {% include './_day.html' %}
   </div>
 </div>
+<script>
+	  {% autoescape %}
+	  var options = {
+	    hotels: {{ hotels | json }},
+	    restaurants: {{ restaurants | json }},
+	    activities: {{ activities | json }},
+	  };
+	  {% endautoescape %}
+</script>
 <script src='/vendor/jquery/dist/jquery.js'></script>
 <script src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_API_KEY }}&sensor=true"></script>
 <script src='/public/js/Map.js'></script>

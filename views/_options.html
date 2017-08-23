@@ -3,16 +3,12 @@
     Options
   </div>
   <div class='panel-body'>
-    <ul class='list-group'>
+    <ul class='list-group' id="optionSelects">
       <li class='list-group-item'>
         Hotels
         <br />
-        <select style='width: 80%' class='form-control input-sm pull-left'>
-          {% for item in hotels %}
-          <option value='{{ item.id }}'>
-            {{ item.name }} 
-          </option>
-          {% endfor %}
+        <select id="hotelDD" style='width: 80%' class='form-control input-sm pull-left'>
+          
         </select>
         <button class='btn btn-primary btn-sm pull-right'>+</button>
         <br clear='all' />
@@ -21,12 +17,12 @@
       <li class='list-group-item'>
         Restaurants
         <br />
-        <select style='width: 80%' class='form-control input-sm pull-left'>
-          {% for item in restaurants %}
-          <option value='{{ item.id }}'>
-            {{ item.name }} 
-          </option>
-          {% endfor %}
+        <select id="restaurantDD" style='width: 80%' class='form-control input-sm pull-left'>
+          <!-- {% for item in restaurants %} -->
+          <!-- <option value='{{ item.id }}'> -->
+            <!-- {{ item.name }}  -->
+          <!-- </option> -->
+          <!-- {% endfor %} -->
         </select>
         <button class='btn btn-primary btn-sm pull-right'>+</button>
         <br clear='all' />
@@ -35,12 +31,12 @@
       <li class='list-group-item'>
         Activities
         <br />
-        <select style='width: 80%' class='form-control input-sm pull-left'>
-          {% for item in activities %}
-          <option value='{{ item.id }}'>
-            {{ item.name }} 
-          </option>
-          {% endfor %}
+        <select id="activityDD" style='width: 80%' class='form-control input-sm pull-left'>
+          <!-- {% for item in activities %} -->
+          <!-- <option value='{{ item.id }}'> -->
+            <!-- {{ item.name }}  -->
+          <!-- </option> -->
+          <!-- {% endfor %} -->
         </select>
         <button class='btn btn-primary btn-sm pull-right'>+</button>
         <br clear='all' />
